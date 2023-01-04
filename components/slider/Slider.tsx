@@ -1,9 +1,12 @@
 import React,{useState,useRef,useEffect} from 'react'
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import Slide from "./Slide";
-const Slider = () => {
+interface props{
+   images:string[]
+}
+const Slider = ({images}:props) => {
 const[transform ,settransform] = useState<number>(0)
-const images:string[] = ["images/adrianna-geo-1rBg5YSi00c-unsplash.jpg","images/europeana-5TK1F5VfdIk-unsplash.jpg","images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg","images/adrianna-geo-1rBg5YSi00c-unsplash.jpg"]
+
 // console.log(images.length-1)
 const transformleft = ()=>{
    if(transform>=0){
@@ -28,12 +31,13 @@ const ele = useRef<HTMLDivElement>(null);
  
    return (
       <>
-         <div className="slider  relative flex max-w-5xl mx-auto overflow-hidden flex-1 ">
-            <div className="container flex   " ref={ele}>
-                  <Slide transform = {transform} images={images}/>
+         <div className="slider  relative flex  max-w-5xl mx-auto overflow-hidden flex-1 ">
+            <div className="container flex w-full" ref={ele}>
+                  <Slide transform = {transform} images={images}/> 
+                  <div className="red w-10 h-10 rounded-full bg-blue-500"></div>
             </div>
-            <FaAngleLeft className='absolute left-2 top-52 bg-slate-100 w-10 h-10 p-2 rounded-full cursor-pointer' onClick={transformleft}/>
-            <FaAngleRight className='absolute right-2 top-52 bg-slate-100 w-10 h-10 p-2 rounded-full cursor-pointer' onClick={transformright} />
+            <FaAngleLeft className='absolute left-2 top-[50%] bg-slate-100 w-10 h-10 p-2 rounded-full cursor-pointer' onClick={transformleft}/>
+            <FaAngleRight className='absolute right-2 top-[50%] bg-slate-100 w-10 h-10 p-2 rounded-full cursor-pointer' onClick={transformright} />
 
          </div>
       </>

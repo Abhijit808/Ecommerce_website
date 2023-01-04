@@ -8,7 +8,7 @@ import Navlinks from './navcomponets/Navlinks';
 const Navbar = () => {
   return (
    <>
-     <header className='flex justify-between mx-auto items-center w-11/12'>
+     <header className= 'shadow-slate-700 shadow-sm flex justify-between mx-auto  items-center w-full px-8'>
        <div className="left">
             <Image 
              src={img_src}
@@ -18,7 +18,7 @@ const Navbar = () => {
                 className='py-2 rounded-full '
              />
        </div>
-      <div className="right flex flec-col w-2/3 items-center justify-between">
+      <div className="right hidden md:flex flec-col w-2/3 items-center justify-between">
                 <div className='flex justify-center items-center relative  '>
                     <input type="text" name="search" id="search"  className='p-2 w-96 border-2   border-gray-900 ' placeholder='hello'/>
                     <FaSearch className='w-10 h-10 p-2 right-0 hover:bg-sky-900 hover:cursor-pointer text-white  bg-orange-900 absolute '/>

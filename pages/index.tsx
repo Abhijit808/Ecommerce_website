@@ -1,7 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Navbar from "../components/navbar/Navbar"
 import Slider from "../components/slider/Slider"
+import Cnavbar from '../components/catogories/Cnavbar'
+import Imp from "../components/images/Imp"
+import  Grid  from '../components/images/imagecomponent'
+import  Footer  from '../components/Footer/Footer'
+const images:string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg","/images/europeana-5TK1F5VfdIk-unsplash.jpg","/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg","/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg"]
 export default function Home() {
   return (
     <>
@@ -11,11 +15,58 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-        <Navbar></Navbar>
-       <main className=' main_section'>
-        <Slider></Slider>
-      </main>
+
+      <Navbar></Navbar>
+      <div className="mx-auto w-[80vw] grid gap-10">
+        <main className=' mt-10 main_section mx-auto w-[60vw] flex justify-center gap-8 relative'>
+          <Cnavbar />
+          <div className="slider w-[100%]">
+            <Slider images={images}></Slider>
+          </div>
+        </main>
+        {/* <aside>
+          <div className="sale">
+            <h4>Lorem ipsum dolor sit.</h4>
+
+          </div>
+        </aside> */}
+        <aside className='flex flex-col gap-10'>
+          <div className="images flex gap-6">
+            <Imp />
+            <Imp />
+            <Imp />
+          </div>
+          <div className="grid_images flex flex-col">
+            <h3 className='text-3xl font-bold mb-10'>Lorem</h3>
+            <div className="grid grid-cols-3 gap-6">
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            </div>
+          </div>
+          <div className="grid_images flex flex-col">
+            <h3 className='text-3xl font-bold mb-10'>Lorem</h3>
+            <div className="grid grid-cols-3 gap-6">
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            <Grid/>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <Footer/>
     </>
   )
 }
