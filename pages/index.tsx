@@ -8,7 +8,7 @@ import Card1 from '../components/card_1/Card_main_1'
 import Footer from '../components/Footer/Footer'
 import Image from 'next/image'
 import Productscarousoul from '../components/cards_Slider/Productscarousoul'
-const images: string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg", "/images/europeana-5TK1F5VfdIk-unsplash.jpg", "/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg", "/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg"]
+const images: string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg", "/images/europeana-5TK1F5VfdIk-unsplash.jpg", "/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg", "/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg","/images/windows-L0xLAqyz4N4-unsplash.jpg"]
 export default function Home() {
   return (
     <>

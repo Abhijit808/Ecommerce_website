@@ -8,32 +8,32 @@ interface props{
 const Slider = ({images}:props) => {
 const[transform ,settransform] = useState<number>(0)
 // TODO:complete the sider setinterval
-useEffect(()=>{
-  const interval = window.setInterval(()=>{
-        console.log(transform);
-       transform>=0?settransform(prev=>prev-1):settransform(-3)   
-  },2000)
-  return(()=>{
-   window.clearInterval(interval)
-  })
-},[transform])
+// useEffect(()=>{
+//   const interval = window.setInterval(()=>{
+//         console.log(transform);
+//        transform>=0?settransform(prev=>prev-1):settransform(-3)   
+//   },2000)
+//   return(()=>{
+//    window.clearInterval(interval)
+//   })
+// },[transform])
 // console.log(images.length-1)
 const transformleft = ()=>{
    if(transform>=0){
-      settransform(-1)
+      settransform(-(images.length-1))
       return
    }
    settransform(prev=>prev+1)
 }
 // TODO:configue using length 
 const transformright =()=>{
-   if(transform <-2){
+   if(transform <-(images.length-2)){
       settransform(0);
       return;
    }
    settransform(prev=>prev-1)
-   // console.log(transform);
 }
+// console.log(transform);
 const ele = useRef<HTMLDivElement>(null);
    if(ele.current != null){
       ele.current.style.transform = `translateX(${transform}00%)`;

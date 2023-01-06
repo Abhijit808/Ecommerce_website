@@ -1,9 +1,7 @@
 import React from 'react'
 import { IconBaseProps } from 'react-icons'
-interface props{
-  Box:IconType
-}
-const Sub_card_1 = ({Box}:props) => {
+
+const Sub_card_1 = ({Box}:any) => {
   return (
     <div className="cards w-full flex flex-col justify-center items-center gap-4">
     <div className="image w-full h-full flex justify-center items-center">
