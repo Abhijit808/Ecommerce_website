@@ -3,9 +3,12 @@ import Navbar from "../components/navbar/Navbar"
 import Slider from "../components/slider/Slider"
 import Cnavbar from '../components/catogories/Cnavbar'
 import Imp from "../components/images/Imp"
-import  Grid  from '../components/images/imagecomponent'
-import  Footer  from '../components/Footer/Footer'
-const images:string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg","/images/europeana-5TK1F5VfdIk-unsplash.jpg","/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg","/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg"]
+import Grid from '../components/images/imagecomponent'
+import Card1 from '../components/card_1/Card_main_1'
+import Footer from '../components/Footer/Footer'
+import Image from 'next/image'
+import Productscarousoul from '../components/cards_Slider/Productscarousoul'
+const images: string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg", "/images/europeana-5TK1F5VfdIk-unsplash.jpg", "/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg", "/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg"]
 export default function Home() {
   return (
     <>
@@ -24,49 +27,29 @@ export default function Home() {
             <Slider images={images}></Slider>
           </div>
         </main>
-        {/* <aside>
-          <div className="sale">
-            <h4>Lorem ipsum dolor sit.</h4>
-
-          </div>
-        </aside> */}
-        <aside className='flex flex-col gap-10'>
-          <div className="images flex gap-6">
+        <aside className='flex flex-col gap-10 '>
+          <div className="images flex gap-6 justify-center">
             <Imp />
             <Imp />
             <Imp />
           </div>
-          <div className="grid_images flex flex-col">
-            <h3 className='text-3xl font-bold mb-10'>Lorem</h3>
-            <div className="grid grid-cols-3 gap-6">
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            </div>
+          <aside className='flex bg-slate-100 justify-center '>
+          <Card1/>
+          </aside>
+          <div className="productcarousol shadow-2xl">
+             <Productscarousoul heading={"Heading"}/>
           </div>
-          <div className="grid_images flex flex-col">
-            <h3 className='text-3xl font-bold mb-10'>Lorem</h3>
-            <div className="grid grid-cols-3 gap-6">
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            <Grid/>
-            </div>
+          <div className="images flex gap-6 justify-center">
+            <Imp />
+            <Imp />
+            <Imp />
+          </div>
+          <div className="productcarousol shadow-2xl">
+             <Productscarousoul heading={"Heading"}/>
           </div>
         </aside>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

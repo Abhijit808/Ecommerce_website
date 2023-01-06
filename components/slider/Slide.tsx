@@ -13,7 +13,7 @@ const slide = ({transform,images}:props) => {
       {
         images.map((image,i)=>{
           return(
-            <>
+         
               <Image 
               src={image} 
               alt={image}
@@ -23,7 +23,7 @@ const slide = ({transform,images}:props) => {
               key={i}
                />
               
-               </>
+              
               )
             })
         }
