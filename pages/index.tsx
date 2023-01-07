@@ -21,8 +21,11 @@ export default function Home() {
 
       <Navbar></Navbar>
       <div className="mx-auto w-[80vw] grid gap-10">
-        <main className=' mt-10 main_section mx-auto w-[60vw] flex justify-center gap-8 relative'>
+        <main className=' mt-10 main_section mx-auto w-[80vw] flex justify-center gap-8 relative'>
+          <div className='w-[50%]'>
+
           <Cnavbar />
+          </div>
           <div className="slider w-[100%]">
             <Slider images={images}></Slider>
           </div>

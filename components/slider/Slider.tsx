@@ -1,5 +1,6 @@
 import React,{useState,useRef,useEffect} from 'react'
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import styles from "../../styles/Home.module.css"
 import Slide from "./Slide";
 import { setInterval } from 'timers/promises';
 interface props{
@@ -40,8 +41,8 @@ const ele = useRef<HTMLDivElement>(null);
  } 
    return (
       <>
-         <div className="slider  relative flex  max-w-5xl mx-auto overflow-hidden flex-1 ">
-            <div className="container flex w-full relative" ref={ele} >
+         <div className="slider h-full relative flex  max-w-5xl mx-auto overflow-hidden flex-1 ">
+            <div className={`${styles.height} flex w-full relative`} ref={ele} >
                   <Slide transform = {transform} images={images}/> 
             </div>
                   <div className="bubble absolute flex gap-2 bottom-2 left-[49%]">

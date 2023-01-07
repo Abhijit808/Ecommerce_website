@@ -19,7 +19,7 @@ const slide = ({transform,images}:props) => {
               alt={image}
               width={1000}
               height={1000}
-              className={`w-[80%] ${styles.height}  object-cover md:w-[80vw] rounded-xl`}  
+              className={`w-[100%] ${styles.height}  object-cover  rounded-xl`}  
               key={i}
                />
               
