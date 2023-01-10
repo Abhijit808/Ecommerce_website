@@ -42,10 +42,10 @@ const ele = useRef<HTMLDivElement>(null);
    return (
       <>
          <div className="slider h-full relative flex  max-w-5xl mx-auto overflow-hidden flex-1 ">
-            <div className={`${styles.height} flex w-full relative`} ref={ele} >
+            <div className={`${styles.height} flex w-full relative md:w-[40rem] sm:w-[35rem] xsa:w-60`} ref={ele} >
                   <Slide transform = {transform} images={images}/> 
             </div>
-                  <div className="bubble absolute flex gap-2 bottom-2 left-[49%]">
+                  <div className="bubble absolute flex gap-2 bottom-2 left-[49%] md:left-[35%]">
                      {
                         images.map((_,index)=>{
                            let val = transform === (-index)

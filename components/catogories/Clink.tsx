@@ -1,15 +1,14 @@
 import React from 'react'
 import Catogries from "./Catorigies";
 import styles from "../../styles/Home.module.css"
-import { AiOutlineMobile } from "react-icons/ai";  
+ 
 const Clink = () => {
   return (
-    <li className={`p-2 text-lg ${styles.link}`}>
+    <li className={`p-2 text-lg ${styles.link} relative`}>
     <p className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left'>
-      <AiOutlineMobile/>
-      lorem
+      Lorem
     </p>
-    <div className={`${styles.catogiries} absolute  right-0 top-0 bottom-0 left-[15.9rem] rounded-lg z-10 `}>
+    <div className={`${styles.catogiries} absolute top-10 w-80 left-0 rounded-lg z-10 md:relative md:top-0 md:left-20`}>
       <Catogries />
     </div>
   </li>

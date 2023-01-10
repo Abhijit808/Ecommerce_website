@@ -20,29 +20,25 @@ export default function Home() {
       </Head>
 
       <Navbar></Navbar>
-      <div className="mx-auto w-[80vw] grid gap-10">
+      <div className="mx-auto w-[80vw] grid gap-10 md:w-[90vw]">
         <main className=' mt-10 main_section mx-auto w-[80vw] flex justify-center gap-8 relative'>
-          <div className='w-[50%]'>
-
-          <Cnavbar />
-          </div>
           <div className="slider w-[100%]">
             <Slider images={images}></Slider>
           </div>
         </main>
         <aside className='flex flex-col gap-10 '>
-          <div className="images flex gap-6 justify-center">
+          <div className="images flex gap-6 justify-center md:flex-col items-center">
             <Imp />
             <Imp />
             <Imp />
           </div>
-          <aside className='flex bg-slate-100 justify-center '>
+          <aside className='flex bg-slate-100 justify-center md:flex-col items-center'>
           <Card1/>
           </aside>
           <div className="productcarousol shadow-2xl">
              <Productscarousoul heading={"Heading"}/>
           </div>
-          <div className="images flex gap-6 justify-center">
+          <div className="images flex gap-6 justify-center md:flex-col items-center">
             <Imp />
             <Imp />
             <Imp />

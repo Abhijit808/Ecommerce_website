@@ -4,8 +4,8 @@ import Subcomponent from './Subcomponent'
 const Catorigies = () => {
   return (
     <>
-    <nav className="catogriries nav bg-slate-50  h-full rounded-xl ">
-        <ul className='flex  gap-10 justify-between h-full w-full '>
+    <nav className="catogriries nav bg-slate-50 rounded-xl p-7 ">
+        <ul className="grid grid-cols-2 gap-3">
            <Subcomponent/>
            <Subcomponent/>
            <Subcomponent/>

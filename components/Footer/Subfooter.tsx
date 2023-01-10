@@ -4,7 +4,7 @@ import React from 'react'
 const subfooter = () => {
   return (
     <>
-    <footer className='flex items-center justify-between bg-green-500'>
+    <footer className='flex items-center justify-between bg-green-500 md:flex-col '>
       <div className='text-xl p-2 text-white '>
       @copywrite {new Date().getFullYear()}
     </div>

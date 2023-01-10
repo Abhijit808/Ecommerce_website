@@ -1,14 +1,21 @@
 .height{
-  aspect-ratio: 1;
+  aspect-ratio: 2/1;
 }
 .catogiries{
-  /* display: none; */
-  z-index: -1;
-  opacity: 0;
+  display: none;
 }
 .link:hover .catogiries{
-  /* display:block; */
-  z-index: 1;
-  opacity: 1;
+  display:block;
+ 
   transition: all 400ms ease ;
+}
+@media (max-width:500px){
+ .height{
+  aspect-ratio: 1/2;
+ }
+}
+@media (max-width:767px){
+ .height{
+  aspect-ratio: 1;
+ }
 }

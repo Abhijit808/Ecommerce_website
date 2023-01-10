@@ -9,7 +9,7 @@ const card_main_1 = () => {
       <h4 className='text-3xl text-center '>Lorem ipsum dolor sit.</h4>
       <p className='text-center text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis exercitationem quam autem </p>
     </div>
-    <div className='wrapper flex justify-center items-center'>
+    <div className='wrapper flex justify-center items-center md:flex-col '>
 
       <Sub_card_1 Box = {<BsBoxSeam className='w-10 h-10'/>}/>
       <Sub_card_1 Box = {<BsBoxSeam className='w-10 h-10'/>}/>
