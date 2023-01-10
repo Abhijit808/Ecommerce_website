@@ -1,6 +1,6 @@
 import React from 'react'
 interface props{
-    icon?:IconType,
+    icon?:any,
     text:String
 }
 const Navlinks = ({icon,text}:props) => {
