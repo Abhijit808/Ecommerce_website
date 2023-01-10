@@ -45,12 +45,13 @@ const Navbar = () => {
       </div>
       </div>
       <div className=' w-[50%] flex justify-around items-center md:relative'>
-         <div className={`${toggle?styles.transform_O:styles.transform}  transition-all flex gap-4 p-2 md:flex-col md:absolute md:top-0 z-10 bg-slate-300  w-[100vw]`}>
+         <div className={`${toggle?styles.transform_O:styles.transform}  transition-all flex justify-between p-2 md:flex-col xl:${styles.transform_O} md:absolute md:top-0 z-10 md:bg-slate-300  w-[100vw]`}>
          <Cnavbar/>
-
+         <div className='flex md:flex-col gap-4 p-2'>
          <Link href="/" className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left text-lg'>Lorem</Link>
          <Link href="/" className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left text-lg'>Lorem</Link>
          <Link href="/" className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left text-lg'>Lorem</Link>
+         </div>
          </div>
           </div>
      </header>

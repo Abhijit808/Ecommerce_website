@@ -9,12 +9,7 @@
  
   transition: all 400ms ease ;
 }
-.transform{
-  transform: translateX(100vw);
-}
-/* .transform_O{
-  transform: translateX(0vw);
-} */
+
 @media (max-width:500px){
  .height{
   aspect-ratio: 1/2;
@@ -24,4 +19,10 @@
  .height{
   aspect-ratio: 1;
  }
+ .transform{
+  transform: translateX(100vw);
+}
+.transform_O{
+  transform: translateX(0vw);
+}
 }
