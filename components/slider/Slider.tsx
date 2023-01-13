@@ -41,7 +41,7 @@ const ele = useRef<HTMLDivElement>(null);
  } 
    return (
       <>
-         <div className="slider h-full relative flex  max-w-5xl mx-auto overflow-hidden flex-1 ">
+         <div className="slider h-full relative flex  max-w-[100vw] mx-auto overflow-hidden  ">
             <div className={`${styles.height} flex w-full relative md:w-[40rem] sm:w-[35rem] xsa:w-60`} ref={ele} >
                   <Slide transform = {transform} images={images}/> 
             </div>

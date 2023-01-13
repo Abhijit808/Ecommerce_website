@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Navbar from "../components/navbar/Navbar"
 import Slider from "../components/slider/Slider"
-import Cnavbar from '../components/catogories/Cnavbar'
+import styles from "../styles/Home.module.css"
 import Imp from "../components/images/Imp"
 import Grid from '../components/images/imagecomponent'
 import Card1 from '../components/card_1/Card_main_1'
 import Footer from '../components/Footer/Footer'
 import Image from 'next/image'
 import Productscarousoul from '../components/cards_Slider/Productscarousoul'
+import Blogs from '../components/Blogs/Blogs'
 const images: string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg", "/images/europeana-5TK1F5VfdIk-unsplash.jpg", "/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg", "/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg","/images/windows-L0xLAqyz4N4-unsplash.jpg"]
 export default function Home() {
   return (
@@ -20,14 +21,15 @@ export default function Home() {
       </Head>
 
       <Navbar></Navbar>
-      <div className="mx-auto w-[80vw] grid gap-10 md:w-[90vw]">
-        <main className=' mt-10 main_section mx-auto w-[80vw] flex justify-center gap-8 relative'>
+      <div className="mx-auto w-[90vw] grid gap-20 md:w-[90vw]">
+        <main className={` mt-10 ${styles.main_section} mx-auto w-[90vw] flex justify-center gap-8 relative`}>
           <div className="slider w-[100%]">
             <Slider images={images}></Slider>
           </div>
         </main>
         <aside className='flex flex-col gap-10 '>
           <div className="images flex gap-6 justify-center md:flex-col items-center">
+            <Imp />
             <Imp />
             <Imp />
             <Imp />
@@ -42,11 +44,16 @@ export default function Home() {
             <Imp />
             <Imp />
             <Imp />
+            <Imp />
           </div>
           <div className="productcarousol shadow-2xl">
              <Productscarousoul heading={"Heading"}/>
           </div>
         </aside>
+        <Blogs dir={"left"} Heading={"Heading"}/>
+        <Blogs dir={"right"} Heading={"Heading"}/>
+        <Blogs dir={"left"} Heading={"Heading"}/>
+        <Blogs dir={"right"} Heading={"Heading"}/>
       </div>
       <Footer />
     </>

@@ -1,5 +1,5 @@
 .height{
-  aspect-ratio: 2/1;
+  aspect-ratio: 3/1;
 }
 .catogiries{
   display: none;
@@ -24,5 +24,9 @@
 }
 .transform_O{
   transform: translateX(0vw);
+  
+}
+.transform_O .main_section{
+    backdrop-filter: blur(10px);
 }
 }
