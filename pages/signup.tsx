@@ -11,8 +11,6 @@ const signup = () => {
   
     const handlesubmit =(e:any)=>{
         e.preventDefault()
-        console.log(userName)
-        console.log(password)
         const SendData = async()=>{
           const fetchUsers = await fetch("http://localhost:3000/api/signup",{
             method:"post",

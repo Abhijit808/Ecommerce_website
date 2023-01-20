@@ -5,9 +5,10 @@ const connection:any = {};
 
 async function dbConnect() {
     if (connection.isConnected) {
-        return;
+        return 0;
     }
 
     const db = await mongoose.connect(process.env.MONGO_URI as string);
     connection.isConnected = db.connections[0].readyState;
 }
+export default dbConnect

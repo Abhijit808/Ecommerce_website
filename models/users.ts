@@ -18,7 +18,7 @@ const users = new Schema({
    },
    Password:{
     type: String,
-    // required:true
+    required:true
   },
     confirmPassword:{
     type: String,
