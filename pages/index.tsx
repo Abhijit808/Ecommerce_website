@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import Navbar from "../components/navbar/Navbar"
+// import Navbar from "../components/navbar/Navbar"
 import Slider from "../components/slider/Slider"
 import styles from "../styles/Home.module.css"
 import Imp from "../components/images/Imp"
-import Grid from '../components/images/imagecomponent'
 import Card1 from '../components/card_1/Card_main_1'
-import Footer from '../components/Footer/Footer'
+// import Footer from '../components/Footer/Footer'
 import Image from 'next/image'
 import Productscarousoul from '../components/cards_Slider/Productscarousoul'
 import Blogs from '../components/Blogs/Blogs'
@@ -19,8 +18,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar></Navbar>
       <div className="mx-auto w-[90vw] grid gap-20 md:w-[90vw]">
         <main className={` mt-10 ${styles.main_section} mx-auto w-[90vw] flex justify-center gap-8 relative`}>
           <div className="slider w-[100%]">
@@ -55,7 +52,7 @@ export default function Home() {
         <Blogs dir={"left"} Heading={"Heading"}/>
         <Blogs dir={"right"} Heading={"Heading"}/>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
