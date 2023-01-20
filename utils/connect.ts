@@ -1,5 +1,4 @@
 import mongoose from "mongoose"
-const connections:string = 'mongodb+srv://Painfulpike:Auth123@ecommers.2urvuiw.mongodb.net/?retryWrites=true&w=majority'
 
 // TODO:check this and change any 
 const connection:any = {};
@@ -9,7 +8,7 @@ async function dbConnect() {
         return;
     }
 
-    const db = await mongoose.connect(connections);
+    const db = await mongoose.connect(process.env.MONGO_URI);
 
     connection.isConnected = db.connections[0].readyState;
 }

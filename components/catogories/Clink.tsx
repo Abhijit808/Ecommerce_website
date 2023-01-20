@@ -8,7 +8,7 @@ const Clink = () => {
     <p className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left'>
       Lorem
     </p>
-    <div className={`${styles.catogiries} absolute top-10 w-80 left-0 rounded-lg z-10 md:relative md:top-0 md:left-0`}>
+    <div className={`${styles.catogiries} absolute top-10 w-80 left-0 rounded-lg z-10 lg:relative lg:top-0 lg:w-[50%] lg:mx-auto `}>
       <Catogries />
     </div>
   </li>

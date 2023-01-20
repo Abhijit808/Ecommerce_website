@@ -18,15 +18,33 @@ const Cardslider = () => {
 
       // console.log(window.innerWidth);
       let w = window.innerWidth
-      w<=1090?Setwidth(3):Setwidth(4)
-      w<=936?Setwidth(2):Setwidth(4)
-      w<=540?Setwidth(1):Setwidth(4)
+      // w<=1090?Setwidth(3):Setwidth(4);
+      // w<=936?Setwidth(2):Setwidth(4)
+      // w<=540?Setwidth(1):Setwidth(4)
+      if(w<=1090){
+        Setwidth(3)
+        
+      }
+     if(w<=936){
+        Setwidth(2)
+
+      }
+    if(w<=540){
+        Setwidth(1)
+        
+      }
+      if(w>1090){
+            Setwidth(4)
+          
+      }
+      // console.log(w)
     }
     window.addEventListener('resize',inner)
     return(()=>{
       window.removeEventListener('resize',inner);
     })
   },[])
+  // console.log(width)
   return (
     // <Grid/>
     <>

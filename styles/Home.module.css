@@ -9,7 +9,16 @@
  
   transition: all 400ms ease ;
 }
-
+@media ( max-width:1027px) {
+  .transform{
+    /* transform: translateX(100vw); */
+    display: none;
+  }
+  .transform_O{
+    /* transform: translateX(0vw); */
+    display: block;  
+  } 
+}
 @media (max-width:500px){
  .height{
   aspect-ratio: 1/2;
@@ -19,14 +28,5 @@
  .height{
   aspect-ratio: 1;
  }
- .transform{
-  transform: translateX(100vw);
-}
-.transform_O{
-  transform: translateX(0vw);
-  
-}
-.transform_O .main_section{
-    backdrop-filter: blur(10px);
-}
+
 }

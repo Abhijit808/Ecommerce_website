@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </main>
         <aside className='flex flex-col gap-10 '>
-          <div className="images flex gap-6 justify-center md:flex-col items-center">
+          <div className="images flex gap-6 justify-center flex-wrap md:flex-col items-center">
             <Imp />
             <Imp />
             <Imp />
@@ -37,7 +37,7 @@ export default function Home() {
           <div className="productcarousol shadow-2xl">
              <Productscarousoul heading={"Heading"}/>
           </div>
-          <div className="images flex gap-6 justify-center md:flex-col items-center">
+          <div className="images flex gap-6 justify-center flex-wrap md:flex-col items-center">
             <Imp />
             <Imp />
             <Imp />

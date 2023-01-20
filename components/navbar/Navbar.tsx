@@ -26,15 +26,19 @@ const Navbar = () => {
      <header className= 'shadow-slate-700 shadow-sm flex-col  flex justify-between mx-auto  items-center w-full px-8 relative'>
       <div className='flex justify-between mx-auto w-full md:items-center'>
        <div className="left">
-       <h3 className='text-2xl p-5 sm:text-xl'>E-commerce</h3>
+        <Link href="/">
+         <h3 className='text-2xl p-5 sm:text-xl'>
+           E-commerce
+        </h3>
+        </Link>
        </div>
-       <div className="toggle hidden md:block">
+       <div className="toggle hidden lg:block">
        {toggle?
         <RxCross1 className={`text-xl ${toggle?"bg-red-500 text-white font-bold rounded-lg":"bg-white"} w-10 h-10 p-2`} onClick={burger_toggle}/>:
        <FiMenu className={`text-xl ${toggle?"bg-red-500 text-white font-bold rounded-lg":"bg-white"} w-10 h-10 p-2`} onClick={burger_toggle}/>
        }
        </div>
-      <div className="right flex  w-2/3 items-center justify-between md:hidden">
+      <div className="right flex  w-2/3 items-center justify-between lg:hidden">
                 <div className='flex justify-center items-center relative  '>
                     <input type="text" name="search" id="search"  className='p-2 w-96 border-2   border-gray-900 ' placeholder='hello'/>
                     <FaSearch className='w-10 h-10 p-2 right-0 hover:bg-sky-900 hover:cursor-pointer text-white  bg-orange-900 absolute '/>
@@ -45,9 +49,9 @@ const Navbar = () => {
       </div>
       </div>
       <div className=' w-[50%] flex justify-around items-center md:relative'>
-         <div className={`${toggle?styles.transform_O:styles.transform}  transition-all flex justify-between p-2 md:flex-col xl:${styles.transform_O} md:absolute md:top-0 z-10 md:bg-slate-300  w-[100vw]`}>
+         <div className={`${toggle?styles.transform_O:styles.transform}  transition-all flex justify-between p-2 lg:flex-col xl:${styles.transform_O} lg:absolute lg:top-20 md:top-0 z-10 lg:bg-slate-300  w-[100vw]`}>
          <Cnavbar/>
-         <div className='flex md:flex-col gap-4 p-2'>
+         <div className='flex lg:flex-col gap-4 p-2'>
          <Link href="/" className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left text-lg'>Lorem</Link>
          <Link href="/" className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left text-lg'>Lorem</Link>
          <Link href="/" className='w-full hover:font-bold transition-all flex items-center justify-center gap-2 text-left text-lg'>Lorem</Link>
