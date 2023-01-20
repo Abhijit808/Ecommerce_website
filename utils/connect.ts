@@ -8,9 +8,6 @@ async function dbConnect() {
         return;
     }
 
-    const db = await mongoose.connect(process.env.MONGO_URI);
-
+    const db = await mongoose.connect(process.env.MONGO_URI as string);
     connection.isConnected = db.connections[0].readyState;
 }
-
-export default dbConnect;
