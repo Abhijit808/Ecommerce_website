@@ -27,7 +27,7 @@ const signup = () => {
         SendData()
       }
   return (
-    <div className="form__wrapper w-[40%] aspect-square mx-auto my-20 flex justify-center items-center shadow-2xl p-2">
+    <div className="form__wrapper w-[40%] md:w-full aspect-square mx-auto my-20 flex justify-center items-center shadow-2xl p-2">
         <form  method="post " className='flex flex-col gap-7 'onSubmit={handlesubmit}>
         <h2 className='text-2xl text-center'>Sign up</h2>
             <div className="input flex flex-col">

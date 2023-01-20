@@ -25,7 +25,7 @@ const login = () => {
     SendData()
   }
   return (
-      <div className="form__wrapper w-[40%] aspect-square mx-auto flex justify-center items-center shadow-2xl p-2">
+      <div className="form__wrapper w-[40%] md:w-full aspect-square mx-auto flex justify-center items-center shadow-2xl p-2">
         {message}
         <form  method="post " className='flex flex-col gap-7' onSubmit={handlesubmit}>
         <h2 className='text-2xl text-center'>Login</h2>
