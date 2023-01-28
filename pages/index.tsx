@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import Navbar from "../components/navbar/Navbar"
+import Card_2 from "../components/Card_2/Card_2"
 import Slider from "../components/slider/Slider"
 import styles from "../styles/Home.module.css"
 import Imp from "../components/images/Imp"
@@ -8,6 +8,8 @@ import Card1 from '../components/card_1/Card_main_1'
 import Image from 'next/image'
 import Productscarousoul from '../components/cards_Slider/Productscarousoul'
 import Blogs from '../components/Blogs/Blogs'
+import Imagegallery from '../components/ImageGallery/Imagegallery'
+import ArtGallery from '../components/ArtGallery/ArtGallery'
 const images: string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg", "/images/europeana-5TK1F5VfdIk-unsplash.jpg", "/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg", "/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg","/images/windows-L0xLAqyz4N4-unsplash.jpg"]
 export default function Home() {
   return (
@@ -19,10 +21,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="mx-auto w-[90vw] grid gap-20 md:w-[90vw]">
-        <main className={` mt-10 ${styles.main_section} mx-auto w-[90vw] flex justify-center gap-8 relative`}>
-          <div className="slider w-[100%]">
+        <main className={` mt-10 ${styles.main_section} mx-auto w-[90vw] flex justify-center flex-wrap gap-8 relative`}>
+          <div className="slider w-[50%]">
             <Slider images={images}></Slider>
           </div>
+          <Imagegallery/>
         </main>
         <aside className='flex flex-col gap-10 '>
           <div className="images flex gap-6 justify-center flex-wrap md:flex-col items-center">
@@ -37,20 +40,85 @@ export default function Home() {
           <div className="productcarousol shadow-2xl">
              <Productscarousoul heading={"Heading"}/>
           </div>
+            <div className='trending p-2'>
+            <h3 className='text-2xl font-bold mb-10'>Trendings</h3>
           <div className="images flex gap-6 justify-center flex-wrap md:flex-col items-center">
             <Imp />
             <Imp />
             <Imp />
             <Imp />
+            <Imp />
+            <Imp />
+            <Imp />
+            <Imp />
           </div>
-          <div className="productcarousol shadow-2xl">
-             <Productscarousoul heading={"Heading"}/>
+            </div>
+         <aside className='art__work'>
+          <h3 className='text-center text-2xl mb-10 font-bold'>Popular Art Work</h3>
+            <ArtGallery/>
+         </aside>
+        </aside>
+        <aside className='three-formates'>
+          <div className="available">
+            <h3 className='text-2xl font-bold text-center'>Available in Three Formates</h3>
+          </div>
+          <div className='flex gap-7 mt-10'>
+
+          <div className="card ">
+            <Image src="/images/WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg"
+             alt='WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg'
+             width={300}
+             height={600}
+             />
+            <div className="content mt-5 flex flex-col gap-3 w-[100%] p-2">
+              <h3 className='text-xl text-center'>Rolled Canvasprint Without Frame</h3>
+              <p className='text-md text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit pariatur natus et consectetur vero accusantium tenetur repellendus delectus. Aliquam omnis voluptate officiis dolor, nulla veritatis inventore quibusdam optio excepturi.</p>
+            </div>
+             </div>
+          <div className="card ">
+            <Image src="/images/WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg"
+             alt='WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg'
+             width={300}
+             height={600}
+             />
+            <div className="content mt-5 flex flex-col gap-3 w-[100%] p-2">
+              <h3 className='text-xl text-center'>Rolled Canvasprint Without Frame</h3>
+              <p className='text-md text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit pariatur natus et consectetur vero accusantium tenetur repellendus delectus. Aliquam omnis voluptate officiis dolor, nulla veritatis inventore quibusdam optio excepturi.</p>
+            </div>
+             </div>
+          <div className="card ">
+            <Image src="/images/WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg"
+             alt='WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg'
+             width={300}
+             height={600}
+             />
+            <div className="content mt-5 flex flex-col gap-3 w-[100%] p-2">
+              <h3 className='text-xl text-center'>Rolled Canvasprint Without Frame</h3>
+              <p className='text-md text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit pariatur natus et consectetur vero accusantium tenetur repellendus delectus. Aliquam omnis voluptate officiis dolor, nulla veritatis inventore quibusdam optio excepturi.</p>
+            </div>
+             </div>
+          <div className="card ">
+            <Image src="/images/WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg"
+             alt='WhatsApp Image 2021-03-24 at 2.22.00 PM.jpeg'
+             width={300}
+             height={600}
+             />
+            <div className="content mt-5 flex flex-col gap-3 w-[100%] p-2">
+              <h3 className='text-xl text-center'>Rolled Canvasprint Without Frame</h3>
+              <p className='text-md text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit pariatur natus et consectetur vero accusantium tenetur repellendus delectus. Aliquam omnis voluptate officiis dolor, nulla veritatis inventore quibusdam optio excepturi.</p>
+            </div>
+             </div>
           </div>
         </aside>
-        <Blogs dir={"left"} Heading={"Heading"}/>
-        <Blogs dir={"right"} Heading={"Heading"}/>
-        <Blogs dir={"left"} Heading={"Heading"}/>
-        <Blogs dir={"right"} Heading={"Heading"}/>
+        <aside className="wall__Art__by__event grid grid-cols-3 gap-10">
+         <Card_2 text="House Warming"/>
+         <Card_2 text="Birthday Gifts"/>
+         <Card_2 text="Corporate Gifting"/>
+         <Card_2 text="Bedroom Wall art"/>
+         <Card_2 text="Livingroom Wall art"/>
+         <Card_2 text="Panaromic Wall art"/>
+        </aside>
+        {/* <Blogs dir={"left"} Heading={"Heading"}/> */}
       </div>
       {/* <Footer /> */}
     </>

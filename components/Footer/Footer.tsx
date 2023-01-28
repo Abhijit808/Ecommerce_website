@@ -3,7 +3,7 @@ import Subfooter from "./Subfooter";
 const Footer = () => {
   return (
     <div className='mt-10'>
-        <footer className='flex flex-1 gap-7  items-center md:flex-col md:items-start'>
+        {/* <footer className='flex flex-1 gap-7  items-center md:flex-col md:items-start'>
           <div className="footer-ele flex flex-col justify-center p-4 gap-7">
             <h3 className='text-2xl '>E-commerce</h3>
             <p className='w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus incidunt earum explicabo officia</p>
@@ -37,7 +37,7 @@ const Footer = () => {
               <li className='list-none hover:underline cursor-pointer'>lorem</li>
             
           </div>
-        </footer>
+        </footer> */}
         <Subfooter/>
     </div>
   )

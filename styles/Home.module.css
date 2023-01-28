@@ -1,5 +1,5 @@
 .height{
-  aspect-ratio: 3/1;
+  aspect-ratio: 1.2/1;
 }
 .catogiries{
   display: none;
@@ -9,6 +9,20 @@
  
   transition: all 400ms ease ;
 }
+.strike{
+  color: hsl(0, 4%, 51%);
+  position:relative;
+}
+.line{
+  position: absolute;
+  color: hsl(0, 4%, 51%);
+  width: 5rem;
+  height:.1rem;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+}
+
 @media ( max-width:1027px) {
   .transform{
     /* transform: translateX(100vw); */
