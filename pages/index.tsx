@@ -10,6 +10,8 @@ import Productscarousoul from '../components/cards_Slider/Productscarousoul'
 import Blogs from '../components/Blogs/Blogs'
 import Imagegallery from '../components/ImageGallery/Imagegallery'
 import ArtGallery from '../components/ArtGallery/ArtGallery'
+import Card_3 from '../components/card_3/Card_3'
+import Button__secondary from '../components/utlis/buttons/Button__secondary'
 const images: string[] = ["/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg", "/images/europeana-5TK1F5VfdIk-unsplash.jpg", "/images/jene-stephaniuk--MCrF6hnojU-unsplash.jpg", "/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg","/images/windows-L0xLAqyz4N4-unsplash.jpg"]
 export default function Home() {
   return (
@@ -28,13 +30,7 @@ export default function Home() {
           <Imagegallery/>
         </main>
         <aside className='flex flex-col gap-10 '>
-          <div className="images flex gap-6 justify-center flex-wrap md:flex-col items-center">
-            <Imp />
-            <Imp />
-            <Imp />
-            <Imp />
-          </div>
-          <aside className='flex bg-slate-100 justify-center md:flex-col items-center'>
+         <aside className='flex bg-slate-100 justify-center md:flex-col items-center'>
           <Card1/>
           </aside>
           <div className="productcarousol shadow-2xl">
@@ -119,6 +115,23 @@ export default function Home() {
          <Card_2 text="Panaromic Wall art"/>
         </aside>
         {/* <Blogs dir={"left"} Heading={"Heading"}/> */}
+        <aside className='New__Arrivals flex flex-col items-center gap-10'>
+          <h3 className='text-2xl font-bold mb-10'>New Arrivals</h3>
+          <div className='grid grid-cols-3 gap-5'>
+          <Card_3/>
+          <Card_3/>
+          <Card_3/>
+          <Card_3/>
+          <Card_3/>
+          <Card_3/>
+          <Card_3/>
+          <Card_3/>
+          <Card_3/>
+          </div>
+          <div className="btn">
+            <Button__secondary text="View All"/>
+          </div>
+        </aside>
       </div>
       {/* <Footer /> */}
     </>
