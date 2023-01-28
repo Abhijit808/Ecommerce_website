@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Cnavbar from '../catogories/Cnavbar'
 import { FiMenu } from "react-icons/fi";
 import Image from 'next/image';
+import { BsFillBagFill, BsPersonFill } from 'react-icons/bs';
 const Navbar = () => {
   const[toggle,settoggle]=useState<Boolean>(false)
   const burger_toggle=()=>{
@@ -32,13 +33,15 @@ const Navbar = () => {
        <FiMenu className={`text-xl ${toggle?"bg-red-500 text-white font-bold rounded-lg":"bg-white"} w-10 h-10 p-2`} onClick={burger_toggle}/>
        }
        </div>
-      <div className="right flex  w-2/3 items-center justify-between lg:hidden">
+      <div className="right flex  w-2/3 items-center gap-44 lg:hidden">
                 <div className='flex justify-center items-center relative  '>
                     <input type="text" name="search" id="search"  className='p-2 w-96 border-2 rounded-2xl  border-gray-900 ' placeholder='hello'/>
                     <FaSearch className='w-10 h-10 p-2 right-0 hover:cursor-pointer text-black   absolute '/>
                 </div>
-                <Navlinks icon = {<FiRefreshCw className='w-6 h-6'/>} text = {"compare"}/>                
-                <Navlinks icon = {<BiHeart className='w-6 h-6'/>} text = {"WhistList"}/>                               
+                <div className='flex flex-row-reverse gap-2'>
+                <Navlinks icon = {<BsFillBagFill className='w-6 h-6'/>}/>                
+                <Navlinks icon = {<BsPersonFill className='w-6 h-6'/>} />                               
+                </div>
       </div>
       </div>
       <div className=' w-[100%] flex justify-around items-center md:relative'>
