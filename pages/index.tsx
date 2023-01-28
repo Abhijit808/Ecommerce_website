@@ -132,6 +132,18 @@ export default function Home() {
             <Button__secondary text="View All"/>
           </div>
         </aside>
+        <aside className='image mx-auto'>
+          <Image src="/images/WhatsApp Image 2021-03-24 at 2.22.01 PM (2).jpeg"
+          alt='WhatsApp Image 2021-08-13 at 2.57.22 PM.jpeg'
+          height={1000}
+          width={1000}
+          />
+        </aside>
+        <aside className='text'>
+          <h4 className='text-2xl font-bold text-center'>
+           " Trusted for Quality , used for art reproduction"
+          </h4>
+        </aside>
       </div>
       {/* <Footer /> */}
     </>
