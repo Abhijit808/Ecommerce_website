@@ -3,7 +3,7 @@ import React from 'react'
 import styles from '../../styles/Home.module.css'
 const images = () => {
   return (
-      <div className="images sm:w-60 w-64 h-64  flex  items-center justify-center bg-slate-400 hover:filter cursor-pointer relative">
+      <div className="images sm:w-60 w-64 h-64  flex  items-center justify-center bg-slate-400 hover:filter cursor-pointer relative hover:-translate-y-3 transition-all shadow-2xl">
         <Image 
         src = "/images/WhatsApp Image 2021-03-24 at 2.21.58 PM.jpeg"
         alt ="/images/bnwk3-vin468.jpg"

@@ -1,5 +1,5 @@
 .height{
-  aspect-ratio: 1.2/1;
+  aspect-ratio: 3/1;
 }
 .catogiries{
   display: none;
@@ -21,6 +21,23 @@
   left: 0;
   right: 0;
   bottom: 0.5rem;
+}
+.image{
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.image:hover{
+  transform: translateY(-10px);
+}
+.Hover{
+  /* display: none; */
+  transform: translateX(100px);
+  transition: all 500ms ease 0ms;
+}
+.image:hover .Hover{
+   display: block;
+   transform:translateX(0px) ;
 }
 
 @media ( max-width:1027px) {

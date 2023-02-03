@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Grid = () => {
   return (
-    <div className="imgge_wrapper shadow-black shadow-sm flex justify-center items-center flex-col my-11">
+    <div className="imgge_wrapper shadow-black shadow-sm flex justify-center items-center flex-col my-11 hover:translate-x-3">
 
       <div className="wrapper w-52 h-56 rounded-lg flex  items-center justify-center bg-slate-400 hover:filter cursor-pointer relative group ">
           <Image 

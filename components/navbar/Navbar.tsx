@@ -39,8 +39,12 @@ const Navbar = () => {
                     <FaSearch className='w-10 h-10 p-2 right-0 hover:cursor-pointer text-black   absolute '/>
                 </div>
                 <div className='flex flex-row-reverse gap-2'>
-                <Navlinks icon = {<BsFillBagFill className='w-6 h-6'/>}/>                
+                  <Link href="/Products">
+                    <Navlinks icon = {<BsFillBagFill className='w-6 h-6'/>}/>                
+                  </Link>
+                  <Link href="/login">
                 <Navlinks icon = {<BsPersonFill className='w-6 h-6'/>} />                               
+                  </Link>
                 </div>
       </div>
       </div>

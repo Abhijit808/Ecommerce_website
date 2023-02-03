@@ -6,8 +6,8 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <div className='mt-10 bg-slate-900 flex flex-col gap-10'>
-        <footer className="w-[80%] mx-auto flex flex-col gap-10">
-        <div className="footer__r-1 flex gap-44 items-start">
+        <footer className="w-[80%] mx-auto flex flex-col justify-center flex-1 gap-10">
+        <div className="footer__r-1 flex gap-44 items-start flex-1 justify-center flex-wrap">
           <div className="footer-ele flex flex-col p-4 gap-2 justify-center items-start">
             <h5 className='text-xl p-3 text-center border-blue-600 border-b-2 text-white'>Link</h5>
             <li className='list-none hover:underline cursor-pointer text-left text-white'>View All Products</li>
@@ -32,7 +32,7 @@ const Footer = () => {
             <li className='list-none hover:underline cursor-pointer text-white'>About us</li>
           </div>
         </div>
-        <div className='footer__r2 w-[100%] mx-auto flex gap-80 items-center'>
+        <div className='footer__r2 w-[100%] mx-auto flex gap-96 items-center justify-center flex-wrap'>
           <div className="input relative">
             <h3 className='text-white text-xl'>Subscribe To our Products</h3>
             <input type="text" name="newsletter" id="newsletter" placeholder='Email' className=' border-black border-2 w-96 p-2' />
@@ -45,7 +45,7 @@ const Footer = () => {
             <BsPinterest className='text-white text-2xl' />
           </div>
         </div>
-        <div className='footer_r-3 flex gap-96'>
+        <div className='footer_r-3 flex gap-96 justify-center flex-wrap'>
           <div className="btns flex gap-10 items-center">
             <div className="btn-1">
               <h4 className='text-white '>Country/region</h4>

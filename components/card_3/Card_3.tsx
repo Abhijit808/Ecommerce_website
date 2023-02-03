@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '../../styles/Home.module.css'
+import { AiOutlineShareAlt } from 'react-icons/ai'
 const Card_3 = () => {
   return (
     <div className="images sm:w-60 w-80 h-80  flex-col flex  items-center justify-center  hover:filter cursor-pointer relative">
+    <div className={`${styles.image} relative`} >
     <Image 
     src = "/images/WhatsApp Image 2021-03-24 at 2.21.58 PM.jpeg"
     alt ="/images/bnwk3-vin468.jpg"
@@ -11,6 +13,8 @@ const Card_3 = () => {
     width={1000}
     className='object-cover'
     />
+    <span className={`${styles.Hover} absolute text-2xl top-5 text-black right-2 bg-white p-2 rounded-full`}><AiOutlineShareAlt/></span>
+    </div>
     <div className=' bg-white w-full'>
       <div className='flex flex-col w-[100%] gap-1 mx-auto pt-4 items-center'>
       <span className="text-black text-md">Darkblue,Grey,&glod fluid art</span>
