@@ -39,7 +39,21 @@
    display: block;
    transform:translateX(0px) ;
 }
-
+.background{
+  background-color: #F4F5F6;
+}
+.image__hover{
+  transition: all 400ms ease;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+.image__hover:hover{
+  filter: grayscale(0%);
+    
+}
+.background__1{
+  background-color: rgba(0 0 0 0.5);
+}
 @media ( max-width:1027px) {
   .transform{
     /* transform: translateX(100vw); */

@@ -35,7 +35,7 @@ export default function Home() {
           {/* <div className="productcarousol shadow-2xl">
              <Productscarousoul heading={"Heading"}/>
           </div> */}
-            <div className='trending p-2'>
+            <div className={`${styles.background}trending p-5 bg-slate-200`}>
             <h3 className='text-2xl font-bold mb-10'>Trendings</h3>
           <div className="images flex gap-6 justify-center flex-wrap md:flex-col items-center">
             <Imp />
@@ -135,10 +135,11 @@ export default function Home() {
           </div>
         </aside>
         <aside className='image mx-auto'>
-          <Image src="/images/WhatsApp Image 2021-03-24 at 2.22.01 PM (2).jpeg"
+          <Image src="/images/WhatsApp Image 2021-03-24 at 2.22.01 PM.jpeg"
           alt='WhatsApp Image 2021-08-13 at 2.57.22 PM.jpeg'
           height={3000}
           width={3000}
+          className={`${styles.image__hover}`}
           />
         </aside>
         <aside className='text'>

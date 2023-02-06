@@ -23,6 +23,10 @@ module.exports = {
       'xs':{'max':'480px'},
       'xsa':{'max':'310px'}
     },
-    extends:{}
+    extends:{
+      colors: {
+        'light_black': 'rgba(0 0 0)',
+      },
+    }
   }
 }
