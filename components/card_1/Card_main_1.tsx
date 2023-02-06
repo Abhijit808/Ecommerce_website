@@ -13,7 +13,7 @@ const card_main_1 = () => {
       <h4 className='text-3xl text-center '>Lorem ipsum dolor sit.</h4>
       <p className='text-center text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis exercitationem quam autem </p>
     </div> */}
-    <div className='wrapper flex justify-center items-center md:flex-col '>
+    <div className='wrapper flex justify-center items-center md:flex-col gap-4 py-10 px-5'>
 
       <Sub_card_1 Box = {<IoDiamondOutline className='w-14 h-14'/>} heading={"Outstanding Quality"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsam."}/>
       <Sub_card_1 Box = {<IoEarthOutline className='w-14 h-14'/>}heading={"printed on 10 colors machine"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsam."}/>

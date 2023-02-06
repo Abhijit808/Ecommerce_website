@@ -7,7 +7,7 @@ interface props{
 }
 const Sub_card_1 = ({Box,heading,text}:props) => {
   return (
-    <div className="cards w-full flex flex-col justify-center items-center gap-4">
+    <div className="cards w-full flex flex-col justify-center items-center gap-4 basis-[100%] flex-grow h-60 py-10 px-2 shadow-sm shadow-slate-600">
     <div className="image w-full h-full flex justify-center items-center">
       {Box}
     </div>
